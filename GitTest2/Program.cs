@@ -17,8 +17,13 @@ namespace GitTest2
         {
             Random randNum = new Random();
             int numbGuesses = 0;
-            int number = randNum.Next(1, 101);
-            Console.WriteLine("Choose a number from 1-100:");
+            Console.WriteLine("Please enter the bounds for the game.");
+            Console.WriteLine("Start:");
+            int start = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("End:");
+            int end = Convert.ToInt32(Console.ReadLine());
+            int number = randNum.Next(start, end+1);
+            Console.WriteLine("I'm thinking of a number from " + start + "-" + end + ":");
             int numbChosen = Convert.ToInt32(Console.ReadLine());
             while(numbChosen != number)
             {
