@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*James Smith
+ *1/24/2017
+ *Program.cs
+ *practice with github
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
